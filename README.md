@@ -1,4 +1,4 @@
-<img width="907" height="1275" alt="image" src="https://github.com/user-attachments/assets/b195794f-6372-4a8c-a3fd-4c34b0b66b1a" />
+<img  height="600" alt="image" src="https://github.com/user-attachments/assets/b195794f-6372-4a8c-a3fd-4c34b0b66b1a" />
 
 
 # WorkBuddy 积分到期侧边栏（Edge 扩展）
