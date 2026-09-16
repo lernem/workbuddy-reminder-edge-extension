@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "WorkBuddy 积分到期侧边栏",
+  "version": "1.0.9",
+  "description": "在 WorkBuddy「套餐与用量」页面右侧显示所有积分/套餐资源的到期时间，按临近到期排序并高亮提醒。",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.workbuddy.cn/*",
+    "https://copilot.tencent.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.workbuddy.cn/profile/plans-usage*"],
+      "js": ["inject.js"],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.workbuddy.cn/profile/plans-usage*"],
+      "js": ["content.js"],
+      "world": "ISOLATED",
+      "run_at": "document_start"
+    }
+  ]
+}
